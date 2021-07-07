@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
     <title>Notes App</title>
 </head>
 
@@ -20,73 +21,14 @@
                 Notes App
             </div>
             <hr>
-            <textarea placeholder="eg.I want to do my homework at 6:30 PM." id=""></textarea>
-            <input type="button" value="Add Note" id="addbtn">
+            <textarea placeholder="eg.I want to do my homework at 6:30 PM." id="text"></textarea>
+            <input type="button" value="Add Note" id="addbtn" onclick="addNote()">
         </div>
         <br>
         <h1 class="h-section">Your previous Notes</h1>
         <hr>
-        <div class="history">
-            <div class="box">
-                <p>This is my first note</p>
-                <div id="dte">
-                    <img src="trash.png" alt="">
-                </div>
-            </div>
-            <div class="box">
-                <p>I want to do my homework at 6:30 PM.</p>
-                <div id="dte">
-                    <img src="trash.png" alt="">
-                </div>
-            </div>
-            <div class="box">
-                <p>This is my first note</p>
-                <div id="dte">
-                    <img src="trash.png" alt="">
-                </div>
-            </div>
-            <div class="box">
-                <p>This is my first note</p>
-                <div id="dte">
-                    <img src="trash.png" alt="">
-                </div>
-            </div>
-            <div class="box">
-                <p>This is my first note</p>
-                <div id="dte">
-                    <img src="trash.png" alt="">
-                </div>
-            </div>
-            <div class="box">
-                <p>This is my first note</p>
-                <div id="dte">
-                    <img src="trash.png" alt="">
-                </div>
-            </div>
-            <div class="box">
-                <p>This is my first note</p>
-                <div id="dte">
-                    <img src="trash.png" alt="">
-                </div>
-            </div>
-            <div class="box">
-                <p>This is my first note</p>
-                <div id="dte">
-                    <img src="trash.png" alt="">
-                </div>
-            </div>
-            <div class="box">
-                <p>Lorem ipsum dolor sit amet consectetu</p>
-                <div id="dte">
-                    <img src="trash.png" alt="">
-                </div>
-            </div>
-            <div class="box">
-                <p>This is my first note</p>
-                <div id="dte">
-                    <img src="trash.png" alt="">
-                </div>
-            </div>
+        <div class="history" id="prevNotes">
+            <!-- This field is controlled by javascript -->
         </div>
     </div>
     <script src="app.js"></script>
