@@ -15,7 +15,7 @@ function showNotes(){
         <div class="box">
         <p>${element}</p>
         <div id="${index}" class="dte" onclick="deleteNote(this.id)">
-        <img src="trash.png" alt="">
+        <img src="./trash.png" alt="">
         </div>
         </div>
         ` ;
